@@ -1,0 +1,13 @@
+<div class="period-container" fxLayout="column">
+    <label>
+        {{ label }}
+    </label>
+    <mat-form-field appearance="outline">
+        <mat-select #select="ngModel" [(ngModel)]="value">
+            <mat-option *ngFor="let period of periodList" [value]="period" fxLayout="row">
+                <span> {{period}}</span>
+            </mat-option>
+        </mat-select>
+        <mat-icon matSuffix class="arrowIcon arrowIcon_left">keyboard_arrow_down</mat-icon>
+    </mat-form-field>
+</div>

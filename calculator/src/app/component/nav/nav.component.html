@@ -1,0 +1,16 @@
+<nav mat-tab-nav-bar mat-align-tabs="start" [tabPanel]="tabPanel">
+    <a mat-tab-link routerLink="calculator" routerLinkActive [active]="rlaCalculator.isActive"
+        #rlaCalculator="routerLinkActive">
+        Lorem1
+    </a>
+    <a mat-tab-link routerLink="lorem2" routerLinkActive [active]="rlaLorem2.isActive" #rlaLorem2="routerLinkActive">
+        Lorem2
+    </a>
+    <a mat-tab-link routerLink="lorem3" [active]="rlaLorem3.isActive" routerLinkActive #rlaLorem3="routerLinkActive">
+        Lorem3
+    </a>
+    <a mat-tab-link routerLink="lorem4" [active]="rlaLorem4.isActive" routerLinkActive #rlaLorem4="routerLinkActive">
+        Lorem4
+    </a>
+</nav>
+<mat-tab-nav-panel #tabPanel></mat-tab-nav-panel>

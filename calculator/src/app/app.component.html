@@ -1,0 +1,27 @@
+<div class="w100 h100vh" fxLayoutAlign="center center">
+
+  <div class="container" fxLayout="row">
+
+    <div fxFlex="54" fxLayout="column">
+
+      <nav fxFlex="10">
+        <app-nav></app-nav>
+      </nav>
+
+      <div fxFlex="75">
+        <router-outlet></router-outlet>
+      </div>
+
+
+      <footer fxFlex="15">
+        <app-footer></app-footer>
+      </footer>
+
+    </div>
+
+    <aside fxFlex="46">
+      <app-result></app-result>
+    </aside>
+  </div>
+
+</div>

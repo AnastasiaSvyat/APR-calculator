@@ -1,0 +1,27 @@
+<div fxLayout="column" class="amount-container">
+    <label>
+        {{ label }}
+    </label>
+    <mat-form-field class="amount-container_mat-form-field" appearance="outline" fxLayout="row">
+        <input id="amount" name="amount" matInput type="number" [(ngModel)]="value" #amount="ngModel" [min]="1000"
+            [max]="1000000" required />
+        <span class="ml6" matTextPrefix>$&nbsp;</span>
+        <div class="button-container" fxLayout="row">
+            <button [disabled]='value < 1' (click)="value = value - 1000" class="removeBtn"
+                fxLayoutAlign="center center">
+                <mat-icon>remove_circle</mat-icon>
+            </button>
+            <button [disabled]='value > 1000000' (click)="value = value + 1000" class="addBtn"
+                fxLayoutAlign="center center">
+                <mat-icon>add_circle</mat-icon>
+            </button>
+        </div>
+
+        <mat-error class="helper-text red-text">
+            <span *ngIf="amount?.errors?.['required']">Amount is required.</span>
+            <span *ngIf="amount?.errors?.['min']">min 1000</span>
+            <span *ngIf="amount?.errors?.['max']">max 1000000</span>
+        </mat-error>
+
+    </mat-form-field>
+</div>

@@ -1,0 +1,19 @@
+<div class="footer-container">
+    <form class="example-form" fxLayout="row" [formGroup]="sliderForm">
+        <div class="footer-container_left" fxLayoutAlign="center center">
+            <p>Lorem ipsum</p>
+            <span [tooltipClass]="!this.slider?.value ? 'ngTemplateTips' : 'ngTemplateTipsDisabled'"
+                tooltip="Heloooooo it`s calculator! Nice to meet you!">
+                <mat-icon [ngClass]="!this.slider?.value ? 'activeIcon' : 'disabledIcon'">info</mat-icon>
+            </span>
+        </div>
+        <mat-slide-toggle formControlName="slider"></mat-slide-toggle>
+        <div class="footer-container_right" fxLayoutAlign="center center">
+            <p>Lorem ipsum dolor sit</p>
+            <span [tooltipClass]="this.slider?.value ? 'ngTemplateTips' : 'ngTemplateTipsDisabled'"
+                [tooltip]="loremInformationText">
+                <mat-icon [ngClass]="this.slider?.value ? 'activeIcon' : 'disabledIcon'">info</mat-icon>
+            </span>
+        </div>
+    </form>
+</div>

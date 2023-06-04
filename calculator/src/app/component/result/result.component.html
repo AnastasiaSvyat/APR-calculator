@@ -1,0 +1,48 @@
+<div class="result-container" fxLayoutAlign="center ">
+
+    <div fxFlex="83" fxLayout="column">
+        <div fxLayout="column" class="result-container_profit">
+            <span class="title">
+                Profit
+            </span>
+            <span class="count">
+                ${{result?.sum | number: '1.0-0'}}
+            </span>
+        </div>
+
+        <div fxLayout="column" class="result-container_percent">
+            <span class="title">
+                Profit
+            </span>
+            <span class="count">
+                {{result?.percent | number: '1.0-0'}}%
+            </span>
+            <span class="infoText">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit
+            </span>
+        </div>
+
+        <div fxLayout="row" class="result-container_stars" fxLayoutAlign="space-between center">
+            <span class="star">
+                <mat-icon class="star1">star</mat-icon>
+                <mat-icon class="star2">star</mat-icon>
+                <mat-icon class="star3">star</mat-icon>
+                <mat-icon class="star4">star</mat-icon>
+                <mat-icon class="star5">star</mat-icon>
+            </span>
+            <button mat-stroked-button>
+                LOREM IPSUM DOLOR SIT
+            </button>
+        </div>
+
+        <div class="w100" class="result-container_text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+            cumque animi mollitia ipsam quae fuga voluptatibus aut quia autem nulla
+            corrupti suscipit quam, rem veniam, reiciendis, temporibus magni quis velit!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cumque animi mollitia
+            ipsam quae fuga voluptatibus aut quia autem nulla corrupti suscipit quam, rem veniam,
+            reiciendis, temporibus magni quis velit! Lorem ipsum dolor sit amet consectetur adipisicing
+        </div>
+    </div>
+
+</div>

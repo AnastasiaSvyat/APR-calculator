@@ -1,0 +1,75 @@
+.result-container {
+    background-color: #56C6AD;
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    padding-top: 40px;
+
+    .result-container_profit,
+    .result-container_percent {
+        .title {
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        .count {
+            font-weight: 700;
+            font-size: 55px;
+            margin-top: 30px;
+        }
+
+        .infoText {
+            font-weight: 400;
+            font-size: 12px;
+            margin-top: 15px;
+        }
+    }
+
+    .result-container_percent {
+        margin-top: 45px;
+    }
+
+    .result-container_stars {
+        margin-top: 49px;
+
+        button {
+            border: 1px solid white;
+            color: white;
+            width: 321px;
+            height: 48px;
+        }
+
+        mat-icon {
+            color: white;
+        }
+
+        .star1 {
+            transform: scale(0.7);
+        }
+
+        .star2 {
+            transform: scale(0.8);
+        }
+
+        .star3 {
+            transform: scale(0.9);
+        }
+
+        .star4 {
+            transform: scale(1);
+        }
+
+        .star5 {
+            transform: scale(1.2);
+        }
+    }
+
+    .result-container_text {
+        font-size: 12px;
+        font-weight: 300;
+        margin-top: 30px;
+        line-height: 18px;
+    }
+}

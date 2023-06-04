@@ -1,0 +1,39 @@
+<div class="currency-container" fxLayout="column">
+
+  <label>
+    {{ label }}
+  </label>
+
+  <mat-form-field appearance="outline">
+    <mat-select #select="ngModel" [(ngModel)]="value">
+
+      <mat-select-trigger fxLayout="row">
+        <span>
+          {{currentCurrency?.title}}
+        </span>
+        <div class="apr">
+          APR {{currentCurrency?.percent }} %
+        </div>
+      </mat-select-trigger>
+
+      <mat-option>
+        <span class="icon-search">
+          <mat-icon>search</mat-icon>
+        </span>
+        <ngx-mat-select-search placeholderLabel="Lorem" [formControl]="currencyFilterCtrl"></ngx-mat-select-search>
+      </mat-option>
+
+      <mat-option class="optionText" fxLayoutAlign="center center" disabled="true">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit
+      </mat-option>
+
+      <mat-option *ngFor="let currency of filteredcurrencyList$ | async" [value]="currency" fxLayout="row">
+        <span> {{currency.title}}</span>
+        <div class="apr">
+          APR {{currency.percent }} %
+        </div>
+      </mat-option>
+    </mat-select>
+    <mat-icon matSuffix class="arrowIcon arrowIcon_left">keyboard_arrow_down</mat-icon>
+  </mat-form-field>
+</div>

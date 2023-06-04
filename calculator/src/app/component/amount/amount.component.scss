@@ -1,0 +1,56 @@
+.amount-container {
+    margin-left: 45px;
+    margin-top: 42px;
+
+    .amount-container_mat-form-field {
+        min-height: 51px !important;
+        max-height: 54px !important;
+
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            display: none;
+        }
+
+        input {
+            width: 60px;
+        }
+
+        .button-container {
+            width: 100px;
+            margin-left: 5px;
+
+            button {
+                border: none;
+                background-color: #F4F5F6;
+                cursor: pointer;
+                padding: 0;
+            }
+
+            .removeBtn mat-icon {
+                color: #C75D30;
+            }
+
+            .addBtn mat-icon {
+                color: #539985;
+            }
+        }
+
+        .ml6 {
+            margin-left: 6px;
+        }
+    }
+}
+
+::ng-deep .mat-mdc-text-field-wrapper {
+    min-width: 549px !important;
+    background-color: #F4F5F6;
+    min-height: 51px !important;
+}
+
+::ng-deep .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+    display: flex;
+}
+
+::ng-deep .mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix {
+    padding: 0;
+}
